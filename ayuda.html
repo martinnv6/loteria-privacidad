@@ -81,6 +81,10 @@
     color: var(--secundario);
     font-size: 0.9rem;
   }
+  .capturas{display:flex;gap:12px;overflow-x:auto;padding:4px 0 12px;margin:8px 0 16px}
+  .capturas figure{margin:0;flex:0 0 200px}
+  .capturas img{width:200px;height:auto;border-radius:16px;border:1px solid #d9cfcf;display:block}
+  .capturas figcaption{font-size:.85rem;color:#6b5b5b;margin-top:6px;text-align:center}
 </style>
 </head>
 <body>
@@ -89,6 +93,10 @@
   <p class="intro">Guía breve de la app: registra tus tablas, marca las cartas que se cantan y recibe avisos cuando estás cerca de ganar o cuando ganas.</p>
 
   <h2>Agregar una tabla</h2>
+  <div class="capturas">
+    <figure><img src="img/01-mis-tablas.jpg" alt="Mis tablas" loading="lazy" width="540" height="1169"><figcaption>Mis tablas</figcaption></figure>
+    <figure><img src="img/02-nueva-tabla.jpg" alt="Nueva tabla, con el teclado" loading="lazy" width="540" height="1169"><figcaption>Nueva tabla, con el teclado</figcaption></figure>
+  </div>
   <h3>Con el teclado</h3>
   <ol>
     <li>Ve a <strong>Mis tablas</strong> y toca <strong>Agregar tabla</strong>.</li>
@@ -101,9 +109,18 @@
     <li>Toca <strong>Leer desde foto</strong> y elige <strong>Cámara</strong> o <strong>Galería</strong>.</li>
     <li>Ajusta las 4 esquinas arrastrándolas a las orillas de la tabla.</li>
     <li>Toca <strong>Leer tabla</strong>.</li>
-    <li>Revisa las casillas marcadas «Revisar» (borde naranja y triángulo de aviso) y corrige su número si no es el correcto. Arriba se indica cuántas casillas se leyeron con seguridad.</li>
+    <li>Revisa las casillas con contorno rojo grueso, fondo tintado y la etiqueta «Revisar»: se leyeron con poca seguridad. Toca la etiqueta para ver cómo se leyó y corrige el número si no es el correcto.</li>
+    <li>Toca <strong>Ver foto</strong> para ver tu foto en las casillas (y <strong>Ver cartas</strong> para volver). Mantén pulsada una casilla para comparar el recorte de tu foto con la carta elegida.</li>
     <li>Toca <strong>Guardar tabla</strong>.</li>
   </ol>
+
+  <div class="capturas">
+    <figure><img src="img/03-ajustar-esquinas.jpg" alt="Ajusta las esquinas" loading="lazy" width="540" height="1169"><figcaption>Ajusta las esquinas</figcaption></figure>
+    <figure><img src="img/04-revision.jpg" alt="Casillas para revisar" loading="lazy" width="540" height="1169"><figcaption>Casillas para revisar</figcaption></figure>
+    <figure><img src="img/05-ver-foto.jpg" alt="Ver foto: compara con tu tabla" loading="lazy" width="540" height="1169"><figcaption>Ver foto: compara con tu tabla</figcaption></figure>
+  </div>
+
+  <p>Al guardar una tabla leída desde foto, sus casillas pueden mostrar tu foto en vez de las cartas. Cámbialo cuando quieras en el menú de la tabla, en Mis tablas, con «Usar las imágenes de mi foto».</p>
 
   <h2>Consejos para la foto</h2>
   <ul>
@@ -116,10 +133,14 @@
   <h2>Durante el juego</h2>
   <ul>
     <li><strong>Cantadas:</strong> toca una carta para marcarla como cantada. Vuelve a tocarla para desmarcarla.</li>
-    <li><strong>Buscar:</strong> escribe un número (19) o parte del nombre (ga) en el cuadro de búsqueda para encontrar la carta más rápido.</li>
+    <li><strong>Buscar:</strong> escribe un número (19) o parte del nombre (ca) en el cuadro de búsqueda para encontrar la carta más rápido.</li>
     <li><strong>Deshacer:</strong> el botón Deshacer quita el último cambio en las cartas cantadas.</li>
     <li><strong>Nueva partida:</strong> el ícono de reinicio, arriba, borra las cartas cantadas. Tus tablas y reglas se conservan.</li>
   </ul>
+
+  <div class="capturas">
+    <figure><img src="img/06-cantadas.jpg" alt="Cantadas con búsqueda" loading="lazy" width="540" height="1169"><figcaption>Cantadas con búsqueda</figcaption></figure>
+  </div>
 
   <h2>Avisos</h2>
   <ul>
@@ -127,6 +148,11 @@
     <li><strong>¡Lotería!:</strong> al completar un patrón aparece la tabla ganadora, con el patrón resaltado, y el nombre de la combinación. El teléfono vibra largo. Toca <strong>Siguiente</strong> si hay más victorias, o <strong>Cerrar</strong>.</li>
     <li><strong>Más cerca de ganar:</strong> en Mis tablas se listan las combinaciones que están más cerca de completarse.</li>
   </ul>
+
+  <div class="capturas">
+    <figure><img src="img/07-a-una-carta.jpg" alt="Aviso: te falta una carta" loading="lazy" width="540" height="1169"><figcaption>Aviso: te falta una carta</figcaption></figure>
+    <figure><img src="img/08-loteria.jpg" alt="¡Lotería! con la tabla ganadora" loading="lazy" width="540" height="1169"><figcaption>¡Lotería! con la tabla ganadora</figcaption></figure>
+  </div>
 
   <h2>Reglas y patrones</h2>
   <p>Toca el ícono <strong>Reglas</strong>, arriba, y marca los patrones de la partida. Puedes activar uno, varios o todos, pero debe quedar al menos uno. <strong>Aceptar</strong> guarda los cambios; <strong>Cancelar</strong> los descarta.</p>
@@ -140,6 +166,10 @@
     <dt>Cruz</dt><dd>Las dos diagonales completas (8 cartas).</dd>
     <dt>Llena</dt><dd>Las 16 cartas de la tabla.</dd>
   </dl>
+
+  <div class="capturas">
+    <figure><img src="img/09-reglas.jpg" alt="Reglas de victoria" loading="lazy" width="540" height="1169"><figcaption>Reglas de victoria</figcaption></figure>
+  </div>
 
   <h2>Carta repetida</h2>
   <p>En <strong>Ajustes</strong>, la opción «Permitir una carta repetida por tabla» viene activada: una sola carta puede aparecer dos veces en la misma tabla, pero ninguna más de dos veces. Desactívala si quieres que todas las cartas de cada tabla sean distintas.</p>
